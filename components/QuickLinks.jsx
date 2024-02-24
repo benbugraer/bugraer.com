@@ -10,7 +10,7 @@ export default function QuickLinks() {
       <li className="transition-opacity">
         <Link
           className="flex gap-3 items-center no-underline"
-          href="https://github.com/benbugraer"
+          href="https://github.com/bugraerben"
           target="blank"
         >
           <FaGithub className="text-xl" />

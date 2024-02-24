@@ -10,7 +10,7 @@ const ContactLinks = [
   },
   {
     label: "GitHub",
-    href: "https://github.com/benbugraer",
+    href: "https://github.com/bugraerben",
     icon: <FaGithub />,
   },
 
