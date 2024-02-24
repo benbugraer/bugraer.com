@@ -11,8 +11,7 @@ import {
   SiNotion,
   SiMiro,
   SiGooglecalendar,
-  SiMicrosoftedge,
-  SiFramer,
+  SiGooglechrome,
   SiArc,
   SiOpenai,
 } from "react-icons/si";
@@ -66,15 +65,14 @@ const GearItems = () => {
       title: "Arc Browser | Beta",
     },
     {
-      icon: <SiMicrosoftedge className="w-7 h-7" />,
-      title: "Microsoft Edge",
+      icon: <SiGooglechrome className="w-7 h-7" />,
+      title: "Google Chrome",
     },
     {
       icon: <SiOpenai className="w-7 h-7" />,
       title: "Chat GPT",
     },
     { icon: <FaFigma className="w-7 h-7" />, title: "Figma" },
-    { icon: <SiFramer className="w-7 h-7" />, title: "Framer" },
   ];
 
   const productivityApps = [
