@@ -2,13 +2,14 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
 import Head from "next/head";
-import { Inter } from "next/font/google";
+import { Jost } from "next/font/google";
+
 import "./globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
 import clsx from "clsx";
 import Navigation from "@/components/Navigation";
 
-const inter = Inter({ subsets: ["latin"] });
+const jost = Jost({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Bugra Er | Home",
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
       </Head>
       <body
         className={clsx(
-          inter.className,
+          jost.className,
           "antialiased bg-primary text-primary w-full"
         )}
       >

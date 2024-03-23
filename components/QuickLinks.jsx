@@ -10,13 +10,13 @@ export default function QuickLinks() {
       <li className="transition-opacity">
         <Link
           className="flex gap-3 items-center no-underline"
-          href="https://github.com/bugraerben"
+          href="https://github.com/benbugraer"
           target="blank"
         >
           <FaGithub className="text-xl" />
           <div className="flex gap-1">
             <h1>
-              <GitHubRepoCount username="bugraerben" />
+              <GitHubRepoCount username="benbugraer" />
             </h1>
             <span> Repositories</span>
           </div>

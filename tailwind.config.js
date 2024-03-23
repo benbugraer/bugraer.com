@@ -25,6 +25,7 @@ module.exports = {
         redux: "#764abc",
         node: "#3c873a",
         tailwind: "#38BDF8",
+        typescript: " #3178c6",
       },
       backgroundColor: {
         primary: "var(--gray-1)",

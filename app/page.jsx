@@ -36,8 +36,8 @@ export default function Home() {
         >
           Hi, I&apos;m Bugra, I&apos;m 22 years old and I&apos;ve been learning
           coding since June 2023 and now I&apos;m actively working on React,
-          Javascript, Tailwind CSS and NextJS. My next goal is learning
-          Typescript.
+          Javascript, Tailwind CSS and NextJS. Now I am actively working on
+          mobile application development with React Native & TypeScript.
         </p>
         <ul
           className="animated-list flex animate-in flex-col gap-2 text-secondary md:flex-row md:gap-6"
