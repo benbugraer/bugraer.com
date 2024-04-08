@@ -1,5 +1,5 @@
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaThreads } from "react-icons/fa6";
+import { FaThreads, FaXTwitter } from "react-icons/fa6";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
 const ContactLinks = [
@@ -20,14 +20,19 @@ const ContactLinks = [
     icon: <FaInstagram />,
   },
   {
+    label: "Threads",
+    href: "https://www.threads.net/@benbugraer",
+    icon: <FaThreads />,
+  },
+  {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/n-bu%C4%9Fra-er/",
     icon: <FaLinkedin />,
   },
   {
-    label: "Threads",
-    href: "https://www.threads.net/@benbugraer",
-    icon: <FaThreads />,
+    label: "Twitter X",
+    href: "https://twitter.com/benbugraer",
+    icon: <FaXTwitter />,
   },
 ];
 

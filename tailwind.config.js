@@ -23,7 +23,7 @@ module.exports = {
         javascript: "#f0db4f",
         next: "#000",
         redux: "#764abc",
-        node: "#3c873a",
+        framer: "#0099FF",
         tailwind: "#38BDF8",
         typescript: " #3178c6",
       },

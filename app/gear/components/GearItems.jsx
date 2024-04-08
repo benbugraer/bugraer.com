@@ -4,16 +4,15 @@ import { BsFillMouseFill } from "react-icons/bs";
 import { TbDeviceAirpods } from "react-icons/tb";
 import { FaKeyboard } from "react-icons/fa6";
 import { FaFigma } from "react-icons/fa";
-import { CgGoogleTasks } from "react-icons/cg";
 import {
   SiWindows,
   SiVisualstudiocode,
   SiNotion,
   SiMiro,
-  SiGooglecalendar,
   SiGooglechrome,
   SiArc,
   SiOpenai,
+  SiFramer,
 } from "react-icons/si";
 
 const GearItem = ({ icon, title }) => (
@@ -51,7 +50,7 @@ const GearItems = () => {
     },
   ];
 
-  const codingDesignGear = [
+  const codingTools = [
     {
       icon: <SiWindows className="w-7 h-7" />,
       title: "Windows 11 Home Edition",
@@ -62,7 +61,7 @@ const GearItems = () => {
     },
     {
       icon: <SiArc className="w-7 h-7" />,
-      title: "Arc Browser | Beta",
+      title: "Arc Browser",
     },
     {
       icon: <SiGooglechrome className="w-7 h-7" />,
@@ -72,29 +71,26 @@ const GearItems = () => {
       icon: <SiOpenai className="w-7 h-7" />,
       title: "Chat GPT",
     },
-    { icon: <FaFigma className="w-7 h-7" />, title: "Figma" },
+  ];
+
+  const designTools = [
+    {
+      icon: <FaFigma className="w-7 h-7" />,
+      title: "Figma",
+    },
+    { icon: <SiFramer className="w-7 h-7" />, title: "Framer" },
   ];
 
   const productivityApps = [
     { icon: <SiNotion className="w-7 h-7" />, title: "Notion" },
     { icon: <SiMiro className="w-7 h-7" />, title: "Miro" },
-    {
-      icon: <SiGooglecalendar className="w-7 h-7" />,
-      title: "Google Calendar",
-    },
-    {
-      icon: <CgGoogleTasks className="w-7 h-7" />,
-      title: "Google Tasks",
-    },
   ];
 
   return (
     <>
       <GearItemsSection title="Tech Gear" items={techGear} />
-      <GearItemsSection
-        title="For Coding & Designing"
-        items={codingDesignGear}
-      />
+      <GearItemsSection title="Coding Tools" items={codingTools} />
+      <GearItemsSection title="UI/UX Design Tools" items={designTools} />
       <GearItemsSection title="Productivity Apps" items={productivityApps} />
     </>
   );

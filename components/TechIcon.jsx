@@ -4,9 +4,12 @@ import {
   SiJavascript,
   SiNextdotjs,
   SiTailwindcss,
-  SiExpo,
+  SiRedux,
+  SiFramer,
   SiTypescript,
 } from "react-icons/si";
+
+import { LogosFigma } from "./ui/FigmaLogo";
 
 import Halo from "@/components/ui/Halo";
 
@@ -30,10 +33,12 @@ export default function TechIcon() {
           <SiTailwindcss
             className={clsx("w-[2.4rem] h-[2.4rem] text-tailwind")}
           />
-          <SiExpo className={clsx("w-[2.4rem] h-[2.4rem] text-primary")} />
+          <SiRedux className={clsx("w-[2.4rem] h-[2.4rem] text-redux")} />
           <SiNextdotjs
             className={clsx("w-[2.4rem] h-[2.4rem] text-next dark:text-white")}
           />
+          <LogosFigma />
+          <SiFramer className={clsx("w-[2.4rem] h-[2.4rem] text-framer")} />
         </div>
       </div>
     </Halo>
