@@ -9,7 +9,7 @@ export default function Gear() {
   return (
     <>
       <div className="flex flex-col  gap-12 md:gap-24">
-        <div className="flex flex-col gap-8 animate-in">
+        <div className="flex flex-col gap-12 animate-in">
           <div>
             <h1 className="animate-in text-3xl font-bold tracking-tight">
               Gear & Tools & Apps

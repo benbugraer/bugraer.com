@@ -9,10 +9,10 @@ import {
   SiVisualstudiocode,
   SiNotion,
   SiMiro,
-  SiGooglechrome,
   SiArc,
   SiOpenai,
   SiFramer,
+  SiBrave,
 } from "react-icons/si";
 
 const GearItem = ({ icon, title }) => (
@@ -38,11 +38,11 @@ const GearItems = () => {
     { icon: <LuLaptop2 className="w-7 h-7" />, title: "Huawei Matebook 16" },
     {
       icon: <BsFillMouseFill className="w-7 h-7" />,
-      title: "Logitech M350 Bluetooth Mouse",
+      title: "Logitech Pebble 2 M350S",
     },
     {
       icon: <FaKeyboard className="w-7 h-7" />,
-      title: "Logitech M350 Bluetooth Keyboard",
+      title: "Logitech Pebble 2 K380S",
     },
     {
       icon: <TbDeviceAirpods className="w-7 h-7" />,
@@ -64,8 +64,8 @@ const GearItems = () => {
       title: "Arc Browser",
     },
     {
-      icon: <SiGooglechrome className="w-7 h-7" />,
-      title: "Google Chrome",
+      icon: <SiBrave className="w-7 h-7" />,
+      title: "Brave Browser",
     },
     {
       icon: <SiOpenai className="w-7 h-7" />,
@@ -90,7 +90,7 @@ const GearItems = () => {
     <>
       <GearItemsSection title="Tech Gear" items={techGear} />
       <GearItemsSection title="Coding Tools" items={codingTools} />
-      <GearItemsSection title="UI/UX Design Tools" items={designTools} />
+      <GearItemsSection title="UI/UX Design" items={designTools} />
       <GearItemsSection title="Productivity Apps" items={productivityApps} />
     </>
   );
