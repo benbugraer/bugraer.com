@@ -13,6 +13,7 @@ const links = [
   { label: "About", href: "/about" },
   { label: "Projects", href: "/projects" },
   { label: "Gear", href: "/gear" },
+  { label: "Templates", href: "/templates" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -23,9 +24,7 @@ export default function Navigation() {
     <header className={clsx("relative md:sticky top-0 z-20 bg-primary")}>
       <nav className="px-4 md:px-6 py-3 lg max-w-[1100px] mx-auto flex justify-between items-center gap-3">
         <Link href="/" className="shrink-0 flex gap-2 uppercase text-primary">
-          <h1 className="uppercase font-bold text-md">
-            Bugra Er
-          </h1>
+          <h1 className="uppercase font-bold text-md">Bugra Er</h1>
         </Link>
         <ul className="hidden md:flex items-center gap-1">
           {links.map((link) => (
@@ -58,7 +57,7 @@ export default function Navigation() {
                       "px-4 py-2 rounded-xl hover:text-primary transition-colors",
                       pathname === link.href
                         ? "bg-secondaryA font-medium"
-                        : "font-light",
+                        : "font-light"
                     )}
                   >
                     {link.label}
