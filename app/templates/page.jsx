@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Halo from "@/components/ui/Halo";
 import templatesInfo from "@/constants/templatesInfo";
 import Button from "@/components/ui/Button";
+import me from "@/public/images/me.jpg";
 
 export const metadata = {
   title: "Templates",
@@ -40,7 +41,7 @@ export default function TemplatesSection() {
               )}
             >
               <div
-                className="w-full md:w-2/3 h-[16rem] aspect-video bg-tertiary rounded-xl border border-secondary overflow-clip select-none"
+                className="w-full md:w-2/3 h-[16rem] bg-secondary aspect-video bg-tertiary rounded-xl border border-secondary overflow-clip select-none"
                 passHref
               >
                 <Halo strength={10}>
@@ -53,7 +54,7 @@ export default function TemplatesSection() {
                   />
                 </Halo>
               </div>
-              <div className="w-full md:w-3/5 space-y-4">
+              <div className="w-full md:w-3/6 space-y-4">
                 <div className="flex gap-3 items-center">
                   <h1
                     className="text-primary font-medium duration-500 ease-linear transition-all hover:duration-500 hover:ease-out hover:transition-all hover:text-tertiary"
@@ -62,7 +63,19 @@ export default function TemplatesSection() {
                     {template.title}
                   </h1>
                   <p className="text-primary"> · </p>
-                  <p>template</p>
+                  <div
+                    className="flex animate-in flex-col gap-3 text-secondary md:flex-row md:items-center"
+                    style={{ "--index": 1 }}
+                  >
+                    <Image
+                      src={template.creator}
+                      width={25}
+                      height={25}
+                      alt="avatar"
+                      className="rounded-full bg-secondary"
+                    />
+                    {template.created}
+                  </div>
                 </div>
                 <p className="line-clamp-3 text-tertiary">
                   {template.description}

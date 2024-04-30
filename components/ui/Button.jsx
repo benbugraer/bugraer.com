@@ -12,7 +12,7 @@ export default function Buttons({ children }) {
         damping: 10,
       }}
     >
-      <button className="flex gap-4 rounded-lg px-2 py-2.5 bg-black text-white dark:bg-white dark:text-black">
+      <button className="flex gap-3 rounded-lg px-2 py-2.5 bg-black text-white dark:bg-white dark:text-black">
         <SiNotion className="w-6 h-6" />
         {children}
       </button>
