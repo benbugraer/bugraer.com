@@ -3,21 +3,21 @@ const Templates = [
     title: "Second Brain",
     description: "",
     url: "/",
-    image: "/templates/second/sb1.png",
+    image: "/templates/second/secondb-1.png",
     tags: ["Notion", "Second Brain", "Todo", "Task", "Areas", , "Database"],
   },
   {
     title: "Project Management",
     description: "",
     url: "/",
-    image: "/templates/management/pm1.png",
+    image: "/templates/management/projectm1.png",
     tags: ["Notion", "Project Management", "Task", "Todo"],
   },
   {
     title: "Matrix Planner",
     description: "",
     url: "/",
-    image: "/templates/planner/mp1.png",
+    image: "/templates/planner/matrixp-1.png",
     tags: [
       "Notion",
       "Matrix Planner",
@@ -30,7 +30,7 @@ const Templates = [
     title: "Goal Tracker",
     description: "",
     url: "/",
-    image: "/templates/goal/gt1.png",
+    image: "/templates/goal/goalt-1.png",
     tags: [
       "Notion",
       "Goal Tracker",
@@ -44,7 +44,7 @@ const Templates = [
     title: "Habit Tracker",
     description: "",
     url: "/",
-    image: "/templates/habit/hb1.png",
+    image: "/templates/habit/habit-1.png",
     tags: [
       "Notion",
       "Habit Tracker",

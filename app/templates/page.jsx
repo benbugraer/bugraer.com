@@ -3,6 +3,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import Halo from "@/components/ui/Halo";
 import templatesInfo from "@/constants/templatesInfo";
+import Button from "@/components/ui/Button";
 
 export const metadata = {
   title: "Templates",
@@ -39,7 +40,7 @@ export default function TemplatesSection() {
               )}
             >
               <div
-                className="w-100 md:w-full p-10 md:p-12 h-[18rem] aspect-video bg-tertiary rounded-xl border border-secondary overflow-clip select-none"
+                className="w-full md:w-2/3 h-[16rem] aspect-video bg-tertiary rounded-xl border border-secondary overflow-clip select-none"
                 passHref
               >
                 <Halo strength={10}>
@@ -67,7 +68,7 @@ export default function TemplatesSection() {
                   {template.description}
                 </p>
                 <div className="mt-4">
-                  <button>
+                  <Button>
                     <Link
                       href={template.url}
                       target="_blank"
@@ -75,7 +76,7 @@ export default function TemplatesSection() {
                     >
                       Duplicate Now
                     </Link>
-                  </button>
+                  </Button>
                 </div>
               </div>
             </li>
