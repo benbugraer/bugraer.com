@@ -12,7 +12,8 @@ import {
   SiArc,
   SiOpenai,
   SiFramer,
-  SiBrave,
+  SiGooglechrome,
+  SiGooglegemini,
 } from "react-icons/si";
 
 const GearItem = ({ icon, title }) => (
@@ -64,8 +65,8 @@ const GearItems = () => {
       title: "Arc Browser",
     },
     {
-      icon: <SiBrave className="w-7 h-7" />,
-      title: "Brave Browser",
+      icon: <SiGooglechrome className="w-7 h-7" />,
+      title: "Google Chrome",
     },
     {
       icon: <SiOpenai className="w-7 h-7" />,
