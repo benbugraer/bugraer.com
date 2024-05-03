@@ -4,7 +4,6 @@ import clsx from "clsx";
 import Halo from "@/components/ui/Halo";
 import templatesInfo from "@/constants/templatesInfo";
 import Button from "@/components/ui/Button";
-import me from "@/public/images/me.jpg";
 
 export const metadata = {
   title: "Templates",

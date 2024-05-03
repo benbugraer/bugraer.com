@@ -6,6 +6,7 @@ import NavLink from "./ui/NavLink";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { Bars3BottomLeftIcon } from "@heroicons/react/24/outline";
 import { Popover, Transition } from "@headlessui/react";
+import MotionNav from "./ui/MotionNav";
 import clsx from "clsx";
 
 const links = [
@@ -21,7 +22,7 @@ export default function Navigation() {
   const pathname = `/${usePathname().split("/")[1]}`; // active paths on dynamic subpages
 
   return (
-    <header className={clsx("relative md:sticky top-0 z-20 bg-primary")}>
+    <MotionNav className={clsx("relative md:sticky top-0 z-20 backdrop-blur")}>
       <nav className="px-4 md:px-6 py-3 lg max-w-[1100px] mx-auto flex justify-between items-center gap-3">
         <Link href="/" className="shrink-0 flex gap-2 uppercase text-primary">
           <h1 className="uppercase font-bold text-md">Bugra Er</h1>
@@ -72,6 +73,6 @@ export default function Navigation() {
           <ThemeSwitcher />
         </div>
       </nav>
-    </header>
+    </MotionNav>
   );
 }
