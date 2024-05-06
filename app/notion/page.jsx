@@ -10,13 +10,13 @@ export const metadata = {
   description: "Templates this template for free.",
 };
 
-export default function TemplatesSection() {
+export default function NotionTemplates() {
   const templates = templatesInfo;
 
   return (
-    <div className="max-w-[48rem] mx-auto mb-24 md:mb-0">
+    <div className="mx-auto mb-24 md:mb-0">
       <div className="flex flex-col gap-16 md:gap-24">
-        <div className="flex max-w-xl flex-col gap-8">
+        <div className="flex flex-col gap-8">
           <div>
             <h1 className="animate-in text-3xl uppercase font-bold tracking-tight">
               Templates
@@ -40,7 +40,7 @@ export default function TemplatesSection() {
               )}
             >
               <div
-                className="w-full md:w-2/3 h-[16rem] bg-secondary aspect-video bg-tertiary rounded-xl border border-secondary overflow-clip select-none"
+                className="w-full md:max-w-100 h-[16rem] bg-secondary aspect-video bg-tertiary rounded-xl border border-secondary overflow-clip select-none"
                 passHref
               >
                 <Halo strength={10}>
@@ -53,7 +53,7 @@ export default function TemplatesSection() {
                   />
                 </Halo>
               </div>
-              <div className="w-full md:w-3/6 space-y-4">
+              <div className="max-w-5xl space-y-4">
                 <div className="flex gap-3 items-center">
                   <h1
                     className="text-primary font-medium duration-500 ease-linear transition-all hover:duration-500 hover:ease-out hover:transition-all hover:text-tertiary"
@@ -63,7 +63,7 @@ export default function TemplatesSection() {
                   </h1>
                   <p className="text-primary"> · </p>
                   <div
-                    className="flex animate-in flex-col gap-3 text-secondary md:flex-row md:items-center"
+                    className="flex animate-in  gap-3 text-secondary md:flex-row md:items-center"
                     style={{ "--index": 1 }}
                   >
                     <Image

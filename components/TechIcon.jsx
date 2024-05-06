@@ -9,8 +9,6 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
-import { LogosFigma } from "./ui/FigmaLogo";
-
 import Halo from "@/components/ui/Halo";
 
 import clsx from "clsx";
@@ -37,8 +35,6 @@ export default function TechIcon() {
           <SiNextdotjs
             className={clsx("w-[2.4rem] h-[2.4rem] text-next dark:text-white")}
           />
-          <LogosFigma />
-          <SiFramer className={clsx("w-[2.4rem] h-[2.4rem] text-framer")} />
         </div>
       </div>
     </Halo>
