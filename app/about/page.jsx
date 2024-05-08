@@ -1,7 +1,7 @@
 import Section from "@/components/Section";
 
 export const metadata = {
-  title: "About | Buğra Er",
+  title: "Bugra Er | About",
   description:
     "I am a Frontend developer who basically just enjoys creating somethings.",
 };
@@ -30,7 +30,7 @@ export default function About() {
             className="flex flex-col gap-6 animate-in"
             style={{ "--index": 4 }}
           >
-            <h1>Hello world, I&apos;m Buğra Er!</h1>
+            <h1>Hello World, I&apos;m Buğra Er!</h1>
             <p>
               I am Buğra Er, a 22 years old young man trying to live in Turkey
               and i love lifting weights, watching basketball, coffee and

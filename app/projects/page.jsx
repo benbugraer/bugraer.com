@@ -1,7 +1,7 @@
 import Section from "@/components/Section";
 
 export const metadata = {
-  title: "Projects | Buğra Er",
+  title: "Bugra Er | Projects",
   description: "All projects i can create",
 };
 

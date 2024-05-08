@@ -3,7 +3,7 @@ import { ArrowUpCircleIcon } from "@heroicons/react/20/solid";
 import ContactLinks from "./components/ContactLinks";
 
 export const metadata = {
-  title: "Contact | Buğra Er",
+  title: "Bugra Er | Contact",
   description: "Contact Me",
 };
 

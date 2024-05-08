@@ -1,7 +1,7 @@
 import GearItems from "./components/GearItems";
 
 export const metadata = {
-  title: "Gear | Buğra Er",
+  title: "Bugra Er | Gear",
   description: "All the tools and applications I use",
 };
 

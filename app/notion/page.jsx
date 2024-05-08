@@ -6,7 +6,7 @@ import templatesInfo from "@/constants/templatesInfo";
 import Button from "@/components/ui/Button";
 
 export const metadata = {
-  title: "Templates",
+  title: "Bugra Er | Notion",
   description: "Templates this template for free.",
 };
 
