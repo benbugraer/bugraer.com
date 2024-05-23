@@ -31,7 +31,6 @@ export default function TechIcon() {
           <SiTailwindcss
             className={clsx("w-[2.4rem] h-[2.4rem] text-tailwind")}
           />
-          <SiRedux className={clsx("w-[2.4rem] h-[2.4rem] text-redux")} />
           <SiNextdotjs
             className={clsx("w-[2.4rem] h-[2.4rem] text-next dark:text-white")}
           />
