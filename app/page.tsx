@@ -3,6 +3,8 @@
 import Image from "next/image";
 import me from "@/public/personal/me.jpg";
 import { motion } from "framer-motion";
+import Contact from "@/components/Contact";
+import { CSSProperties } from "react";
 
 export default function Home() {
   return (
@@ -47,17 +49,38 @@ export default function Home() {
               className="rounded-full border-2 border-primary bg-secondary"
             />
           </motion.div>
-          <motion.p
-            className="text-center text-[0.95rem] font-light text-primary md:text-left md:text-[1rem]"
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
+          <div className="flex flex-col gap-6">
+            <motion.p
+              className="text-center text-sm font-light text-primary md:text-left md:text-[1rem]"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+            >
+              Hi, I&apos;m Bugra I started my software journey in 2023 by
+              leaving everything aside, I&apos;m enjoying this journey very
+              much, I&apos;m learning more about SaaS and Startups. One of my
+              biggest goals for 2025 is to develop 3 SaaS or Startups.
+            </motion.p>
+            <motion.p
+              className="text-center text-sm font-light text-primary md:text-left md:text-[1rem]"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+            >
+              I&apos;m usually at my desk, but when I&apos;m not, you can find
+              me at the gym, jogging around town, or having a coffee at a local
+              shop!
+            </motion.p>
+          </div>
+        </div>
+        <div className="w-full flex flex-col gap-6">
+          <h1
+            className=" uppercase tracking-tight  text-sm text-secondary animate-in"
+            style={{ "--index": 5 } as CSSProperties}
           >
-            Hi, I&apos;m Bugra I started my software journey in 2023 by leaving
-            everything aside, I&apos;m enjoying this journey very much, I&apos;m
-            learning more about SaaS and Startups. One of my biggest goals for
-            2025 is to develop 3 SaaS or Startups.
-          </motion.p>
+            Let&apos;s Connect
+          </h1>
+          <Contact />
         </div>
       </div>
     </div>

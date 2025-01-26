@@ -46,7 +46,7 @@ export default function Navigation() {
       animate="visible"
       variants={navVariants}
     >
-      <nav className="mx-auto flex max-w-[700px] items-center justify-between gap-3 px-4 py-3 md:px-6">
+      <nav className="mx-auto flex max-w-[46.875rem] items-center justify-between gap-3 px-4 py-3 md:px-6">
         <motion.div
           variants={linkVariants}
           whileHover={{ scale: 1.05 }}

@@ -52,12 +52,16 @@ export default function ThemeSwitcher() {
           <ThemeIcon className="h-4 w-4" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className=" space-y-1 rounded-lg bg-primary dark:bg-primary border border-primary">
+      <DropdownMenuContent className=" space-y-1 rounded-xl bg-primary dark:bg-primary border border-primary">
         {THEME_CONFIG.map(({ value, label, icon: Icon }) => (
           <DropdownMenuItem
             key={value}
             onClick={() => setTheme(value)}
-            className={theme === value ? "bg-tertiary " : "group"}
+            className={
+              theme === value
+                ? "bg-tertiary rounded-xl"
+                : "group hover:bg-tertiary rounded-xl"
+            }
           >
             <div className="flex items-center space-x-2">
               <Icon className="h-4 w-4 text-tertiary group-hover:text-primary" />

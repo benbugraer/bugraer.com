@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     url: "https://bugraer.com/",
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,7 +36,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navigation />
-          <div className="mx-auto max-w-[1200px] px-6 pb-24 pt-16 md:px-6 md:pb-44 md:pt-20">
+          <div className="mx-auto max-w-[46.875rem] px-6 pb-24 pt-16 md:px-6 md:pb-44 md:pt-20">
             {children}
           </div>
         </ThemeProvider>
