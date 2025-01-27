@@ -10,8 +10,14 @@ export const metadata = {
 
 export default function Contact() {
   return (
-    <div className="flex flex-col gap-6 w-full">
+    <div className="flex flex-col gap-6 w-full mt-6">
       <div className="flex w-full flex-col gap-6">
+        <h1
+          className="uppercase tracking-tight text-sm text-secondary animate-in"
+          style={{ "--index": 5 } as CSSProperties}
+        >
+          Let&apos;s Connect
+        </h1>
         <ul className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-6 animated-list mb-4">
           {ContactLinks.map((link, index) => (
             <li className="transition-opacity col-span-1" key={link.label}>

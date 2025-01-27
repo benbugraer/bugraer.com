@@ -4,7 +4,7 @@ import Image from "next/image";
 import me from "@/public/personal/me.jpg";
 import { motion } from "framer-motion";
 import Contact from "@/components/Contact";
-import { CSSProperties } from "react";
+import TechStack from "@/components/TechStack";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="text-center md:text-left"
         >
-          <motion.h1 className="text-2xl font-bold uppercase tracking-tight text-primary md:text-3xl">
+          <motion.h1 className="text-xl font-bold uppercase tracking-tight text-primary">
             Bugra Er
           </motion.h1>
           <motion.p
@@ -73,14 +73,9 @@ export default function Home() {
             </motion.p>
           </div>
         </div>
-        <div className="w-full flex flex-col gap-6">
-          <h1
-            className=" uppercase tracking-tight  text-sm text-secondary animate-in"
-            style={{ "--index": 5 } as CSSProperties}
-          >
-            Let&apos;s Connect
-          </h1>
+        <div className="flex flex-col gap-6">
           <Contact />
+          <TechStack />
         </div>
       </div>
     </div>

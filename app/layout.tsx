@@ -11,14 +11,87 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bugraer.com/"),
-  title: "Bugra Er",
-  description:
-    "Bugra Er is a software developer who loves building things for the web.",
-  openGraph: {
-    title: "Bugra Er",
-    url: "https://bugraer.com/",
+  metadataBase: new URL("https://bugraer.com"),
+  title: {
+    default: "Bugra Er | Software Developer",
+    template: "%s | Bugra Er",
   },
+  description:
+    "Bugra Er is a software developer specializing in web development, SaaS applications, and startup solutions. Explore my portfolio and insights on modern web development.",
+  keywords: [
+    "Bugra Er",
+    "Software Developer",
+    "Web Development",
+    "SaaS Developer",
+    "Frontend Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Turkish Developer",
+  ],
+  authors: [{ name: "Bugra Er" }],
+  creator: "Bugra Er",
+  publisher: "Bugra Er",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://bugraer.com",
+    title: "Bugra Er | Software Developer",
+    description:
+      "Software developer specializing in web development and SaaS solutions",
+    siteName: "Bugra Er",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Bugra Er - Software Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bugra Er | Software Developer",
+    description:
+      "Software developer specializing in web development and SaaS solutions",
+    creator: "@benbugraer",
+    images: ["/og-image.jpg"],
+  },
+  verification: {
+    google: "Google Search Console doğrulama kodu",
+    yandex: "Yandex doğrulama kodu",
+  },
+};
+
+export const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Bugra Er",
+  url: "https://bugraer.com",
+  sameAs: [
+    "https://github.com/benbugraer",
+    "https://twitter.com/benbugraer",
+    "https://www.linkedin.com/in/bugraer/",
+  ],
+  jobTitle: "Software Developer",
+  worksFor: {
+    "@type": "Organization",
+    name: "Freelance",
+  },
+  description:
+    "Software developer specializing in web development and SaaS solutions",
+  image: "https://bugraer.com/personal/me.jpg",
+  email: "bugraerdev@gmail.com",
 };
 
 export default function RootLayout({
