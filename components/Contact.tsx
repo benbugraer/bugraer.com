@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ContactLinks from "./social-links";
+import ContactLinks from "./SocialLinks";
 import { CSSProperties } from "react";
 import { ArrowUpRight } from "lucide-react";
 
