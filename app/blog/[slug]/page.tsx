@@ -4,6 +4,12 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
+
 export async function generateStaticParams() {
   const posts = await getBlogPosts();
   return posts.map((post) => ({ slug: post.slug }));
@@ -11,11 +17,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({
   params,
-}: {
-  params: {
-    slug: string;
-  };
-}): Promise<Metadata | undefined> {
+}: PageProps): Promise<Metadata | undefined> {
   const post = await getPost(params.slug);
 
   const {
@@ -55,11 +57,7 @@ export async function generateMetadata({
 
 export default async function Blog({
   params,
-}: {
-  params: {
-    slug: string;
-  };
-}) {
+}: PageProps) {
   const post = await getPost(params.slug);
 
   if (!post) {
