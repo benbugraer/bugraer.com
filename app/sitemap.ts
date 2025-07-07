@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
+import { getBlogPosts } from "@/data/blog";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://bugraer.com";
 
   // Ana rotalar
@@ -8,7 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/projects",
     "/blog",
-    // Diğer statik rotalarınız...
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString(),
@@ -16,14 +16,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === "" ? 1 : 0.8,
   }));
 
-  // Blog postları için dinamik rotalar (blog sistemi eklediğinizde)
-  // const posts = await getPosts() // Blog postlarını getiren fonksiyon
-  // const blogRoutes = posts.map((post) => ({
-  //   url: `${baseUrl}/blog/${post.slug}`,
-  //   lastModified: post.updatedAt,
-  //   changeFrequency: 'weekly' as const,
-  //   priority: 0.6,
-  // }))
+  // Blog postlar için dinamik rotalar
+  const posts = await getBlogPosts();
+  const blogRoutes = posts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: post.metadata.publishedAt,
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
 
-  return [...routes /* , ...blogRoutes */] as MetadataRoute.Sitemap;
+  return [...routes, ...blogRoutes] as MetadataRoute.Sitemap;
 }

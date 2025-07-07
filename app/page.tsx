@@ -25,7 +25,7 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            I write code and i loved so welcome my spaces.
+            I write code and building startups, welcome to my spaces.
           </motion.p>
         </motion.div>
         <div className="flex flex-col items-center gap-6 text-secondary md:flex-row md:items-start">
@@ -56,10 +56,18 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
             >
-              Hi, I&apos;m Bugra I started my software journey in 2023 by
-              leaving everything aside, I&apos;m enjoying this journey very
-              much, I&apos;m learning more about SaaS and Startups. One of my
-              biggest goals for 2025 is to develop 3 SaaS or Startups.
+              Hello, I&apos;m Buğra, I started my software journey in 2023 with
+              by leaving everything aside, I enjoy this journey very much. I am
+              actively working on my first startup and B2B SaaS application,{" "}
+              <a
+                href="https://www.sosyalkopru.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#037a68] font-bold hover:underline"
+              >
+                Sosyal Köprü
+              </a>
+              .
             </motion.p>
             <motion.p
               className="text-center text-sm font-light text-primary md:text-left md:text-[1rem]"

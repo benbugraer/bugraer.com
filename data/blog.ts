@@ -24,10 +24,7 @@ export async function markdownToHTML(markdown: string) {
     .use(remarkParse)
     .use(remarkRehype)
     .use(rehypePrettyCode, {
-      theme: {
-        light: "one-light",
-        dark: "one-dark-pro",
-      },
+      theme: "github-dark",
       keepBackground: true,
 
       onVisitHighlightedLine(node) {

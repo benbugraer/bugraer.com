@@ -13,20 +13,20 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL("https://bugraer.com"),
   title: {
-    default: "Bugra Er | Software Developer",
+    default: "Bugra Er | Solo Entrepreneur",
     template: "%s | Bugra Er",
   },
   description:
-    "Bugra Er is a software developer specializing in web development, SaaS applications, and startup solutions. Explore my portfolio and insights on modern web development.",
+    "Bugra Er is a indie developer specializing in web development, SaaS applications, and startup solutions. Explore my portfolio and insights on modern web development.",
   keywords: [
     "Bugra Er",
-    "Software Developer",
+    "Solo Entrepreneur",
     "Web Development",
-    "SaaS Developer",
+    "SaaS",
     "Frontend Developer",
     "React Developer",
-    "Next.js Developer",
-    "Turkish Developer",
+    "Next.js",
+    "Turkish",
   ],
   authors: [{ name: "Bugra Er" }],
   creator: "Bugra Er",
@@ -46,24 +46,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://bugraer.com",
-    title: "Bugra Er | Software Developer",
+    title: "Bugra Er | Solo Entrepreneur",
     description:
-      "Software developer specializing in web development and SaaS solutions",
+      "Solo entrepreneur specializing in web development and SaaS solutions",
     siteName: "Bugra Er",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Bugra Er - Software Developer",
+        alt: "Bugra Er - Solo Entrepreneur",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bugra Er | Software Developer",
+    title: "Bugra Er | Solo Entrepreneur",
     description:
-      "Software developer specializing in web development and SaaS solutions",
+      "Solo entrepreneur specializing in web development and SaaS solutions",
     creator: "@benbugraer",
     images: ["/og-image.jpg"],
   },
@@ -83,13 +83,13 @@ export const jsonLd = {
     "https://twitter.com/benbugraer",
     "https://www.linkedin.com/in/bugraer/",
   ],
-  jobTitle: "Software Developer",
+  jobTitle: "Solo Entrepreneur",
   worksFor: {
     "@type": "Organization",
     name: "Freelance",
   },
   description:
-    "Software developer specializing in web development and SaaS solutions",
+        "Solo entrepreneur specializing in web development and SaaS solutions",
   image: "https://bugraer.com/personal/me.jpg",
   email: "bugraerdev@gmail.com",
 };
