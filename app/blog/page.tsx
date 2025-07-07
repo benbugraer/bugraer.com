@@ -1,21 +1,21 @@
 import { getBlogPosts } from "@/data/blog";
 import Link from "next/link";
-import Head from "next/head";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: "Buğra Er Blog | Yazılım, Teknoloji ve Hayat",
-  description: "Buğra Er'in yazılım, teknoloji ve hayat üzerine deneyimlerini ve düşüncelerini paylaştığı blog.",
+export const metadata: Metadata = {
+  title: "Buğra Er Blog | Blog",
+  description: "Bugra's blog about software development, life, and more.",
   openGraph: {
-    title: "Buğra Er Blog | Yazılım, Teknoloji ve Hayat",
-    description: "Buğra Er'in yazılım, teknoloji ve hayat üzerine deneyimlerini ve düşüncelerini paylaştığı blog.",
+    title: "Buğra Er Blog | Blog",
+    description: "Bugra's blog about software development, life, and more.",
     url: "https://bugraer.com/blog",
     siteName: "Buğra Er Blog",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Buğra Er Blog | Yazılım, Teknoloji ve Hayat",
-    description: "Buğra Er'in yazılım, teknoloji ve hayat üzerine deneyimlerini ve düşüncelerini paylaştığı blog.",
+    title: "Buğra Er Blog | Blog",
+    description: "Bugra's blog about software development, life, and more.",
   },
 };
 
@@ -24,37 +24,10 @@ export default async function BlogPage() {
 
   return (
     <section>
-      <Head>
-        <title>Buğra Er Blog | Yazılım, Teknoloji ve Hayat</title>
-        <meta name="description" content="Buğra Er'in yazılım, teknoloji ve hayat üzerine deneyimlerini ve düşüncelerini paylaştığı blog." />
-        <meta property="og:title" content="Buğra Er Blog | Yazılım, Teknoloji ve Hayat" />
-        <meta property="og:description" content="Buğra Er'in yazılım, teknoloji ve hayat üzerine deneyimlerini ve düşüncelerini paylaştığı blog." />
-        <meta property="og:url" content="https://bugraer.com/blog" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Buğra Er Blog | Yazılım, Teknoloji ve Hayat" />
-        <meta name="twitter:description" content="Buğra Er'in yazılım, teknoloji ve hayat üzerine deneyimlerini ve düşüncelerini paylaştığı blog." />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Blog",
-              "name": "Buğra Er Blog",
-              "description": "Buğra Er'in yazılım, teknoloji ve hayat üzerine deneyimlerini ve düşüncelerini paylaştığı blog.",
-              "url": "https://bugraer.com/blog",
-              "author": {
-                "@type": "Person",
-                "name": "Buğra Er"
-              }
-            })
-          }}
-        />
-      </Head>
       <div className="flex flex-col space-y-4">
         <h1 className="font-medium text-2xl tracking-tighter">Blog</h1>
         <p className="text-muted-foreground">
-          Yazılım, teknoloji ve hayat üzerine deneyimlerimi ve düşüncelerimi paylaşıyorum.
+         I write about my experiences and thoughts on software development, life, and more.
         </p>
       </div>
       <div className="flex flex-col space-y-4 mt-12">
